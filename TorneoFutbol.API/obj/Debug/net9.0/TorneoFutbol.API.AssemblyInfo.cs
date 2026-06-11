@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("a7233dd1-ec11-416d-9d37-3cfbf6290de2")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("TorneoFutbol.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43001a7d53fd7bd5c681f58d44a06b11e0dab29d")]
 [assembly: System.Reflection.AssemblyProductAttribute("TorneoFutbol.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TorneoFutbol.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

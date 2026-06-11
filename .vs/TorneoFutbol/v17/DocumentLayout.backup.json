@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\canelo\\Desktop\\TorneoFutbol\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AB440256-0320-4FB2-9A20-26FC0CB6D67C}|TorneoFutbol.API\\TorneoFutbol.API.csproj|c:\\users\\canelo\\desktop\\torneofutbol\\torneofutbol.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB440256-0320-4FB2-9A20-26FC0CB6D67C}|TorneoFutbol.API\\TorneoFutbol.API.csproj|solutionrelative:torneofutbol.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB05760B-D68F-4544-90F4-FB54D4659A85}|TorneoFutbol.Infrastructure\\TorneoFutbol.Infrastructure.csproj|c:\\users\\canelo\\desktop\\torneofutbol\\torneofutbol.infrastructure\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB05760B-D68F-4544-90F4-FB54D4659A85}|TorneoFutbol.Infrastructure\\TorneoFutbol.Infrastructure.csproj|solutionrelative:torneofutbol.infrastructure\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DAFA78E-B830-4D9F-AF45-772029E53BD3}|TorneoFutbol.Core\\TorneoFutbol.Core.csproj|c:\\users\\canelo\\desktop\\torneofutbol\\torneofutbol.core\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DAFA78E-B830-4D9F-AF45-772029E53BD3}|TorneoFutbol.Core\\TorneoFutbol.Core.csproj|solutionrelative:torneofutbol.core\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +22,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -18,6 +35,45 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\canelo\\Desktop\\TorneoFutbol\\TorneoFutbol.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "TorneoFutbol.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\canelo\\Desktop\\TorneoFutbol\\TorneoFutbol.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "TorneoFutbol.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T00:00:18.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\canelo\\Desktop\\TorneoFutbol\\TorneoFutbol.Infrastructure\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "TorneoFutbol.Infrastructure\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\canelo\\Desktop\\TorneoFutbol\\TorneoFutbol.Infrastructure\\Services\\AuthService.cs",
+              "RelativeToolTip": "TorneoFutbol.Infrastructure\\Services\\AuthService.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAASwDwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T23:31:14.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\canelo\\Desktop\\TorneoFutbol\\TorneoFutbol.Core\\Interfaces\\IAuthService.cs",
+              "RelativeDocumentMoniker": "TorneoFutbol.Core\\Interfaces\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\canelo\\Desktop\\TorneoFutbol\\TorneoFutbol.Core\\Interfaces\\IAuthService.cs",
+              "RelativeToolTip": "TorneoFutbol.Core\\Interfaces\\IAuthService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T23:27:09.372Z",
+              "EditorCaption": ""
             }
           ]
         },

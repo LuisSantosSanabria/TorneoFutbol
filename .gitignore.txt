@@ -1,0 +1,20 @@
+# Visual Studio
+.vs/
+*.user
+
+# Build
+bin/
+obj/
+
+# User Secrets
+**/secrets.json
+
+# Logs
+*.log
+
+# Publicación
+**/publish/
+
+# NuGet
+*.nupkg
+packages/

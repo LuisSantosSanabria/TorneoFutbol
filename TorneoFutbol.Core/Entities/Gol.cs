@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TorneoFutbol.Core.Entities
 {
-    internal class Gol
+    public class Gol
     {
         public int Id { get; set; }
         public int Minuto { get; set; }

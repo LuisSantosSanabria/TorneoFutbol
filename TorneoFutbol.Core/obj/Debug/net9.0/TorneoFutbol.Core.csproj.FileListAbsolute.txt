@@ -1,0 +1,13 @@
+C:\Users\canelo\Desktop\TorneoFutbol\TorneoFutbol.Core\bin\Debug\net9.0\TorneoFutbol.Core.deps.json
+C:\Users\canelo\Desktop\TorneoFutbol\TorneoFutbol.Core\bin\Debug\net9.0\TorneoFutbol.Core.dll
+C:\Users\canelo\Desktop\TorneoFutbol\TorneoFutbol.Core\bin\Debug\net9.0\TorneoFutbol.Core.pdb
+C:\Users\canelo\Desktop\TorneoFutbol\TorneoFutbol.Core\obj\Debug\net9.0\TorneoFutbol.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\canelo\Desktop\TorneoFutbol\TorneoFutbol.Core\obj\Debug\net9.0\TorneoFutbol.Core.AssemblyInfoInputs.cache
+C:\Users\canelo\Desktop\TorneoFutbol\TorneoFutbol.Core\obj\Debug\net9.0\TorneoFutbol.Core.AssemblyInfo.cs
+C:\Users\canelo\Desktop\TorneoFutbol\TorneoFutbol.Core\obj\Debug\net9.0\TorneoFutbol.Core.csproj.CoreCompileInputs.cache
+C:\Users\canelo\Desktop\TorneoFutbol\TorneoFutbol.Core\obj\Debug\net9.0\TorneoFutbol.Core.sourcelink.json
+C:\Users\canelo\Desktop\TorneoFutbol\TorneoFutbol.Core\obj\Debug\net9.0\TorneoFutbol.Core.dll
+C:\Users\canelo\Desktop\TorneoFutbol\TorneoFutbol.Core\obj\Debug\net9.0\refint\TorneoFutbol.Core.dll
+C:\Users\canelo\Desktop\TorneoFutbol\TorneoFutbol.Core\obj\Debug\net9.0\TorneoFutbol.Core.pdb
+C:\Users\canelo\Desktop\TorneoFutbol\TorneoFutbol.Core\obj\Debug\net9.0\ref\TorneoFutbol.Core.dll
+C:\Users\canelo\Desktop\TorneoFutbol\TorneoFutbol.Core\obj\Debug\net9.0\TorneoFutbol.Core.csproj.AssemblyReference.cache

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TorneoFutbol.Core.Entities
 {
-    internal class Partido
+    public class Partido
     {
         public int Id { get; set; }
         public int FechaNumero { get; set; }
