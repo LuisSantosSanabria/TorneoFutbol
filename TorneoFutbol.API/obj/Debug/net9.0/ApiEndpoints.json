@@ -32,6 +32,91 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TorneoFutbol.API.Controllers.EquipoController",
+    "Method": "Crear",
+    "RelativePath": "api/Equipo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "TorneoFutbol.Core.DTOs.Equipos.CrearEquipoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TorneoFutbol.API.Controllers.EquipoController",
+    "Method": "GetById",
+    "RelativePath": "api/Equipo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TorneoFutbol.API.Controllers.EquipoController",
+    "Method": "Editar",
+    "RelativePath": "api/Equipo/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "TorneoFutbol.Core.DTOs.Equipos.EditarEquipoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TorneoFutbol.API.Controllers.EquipoController",
+    "Method": "Eliminar",
+    "RelativePath": "api/Equipo/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TorneoFutbol.API.Controllers.EquipoController",
+    "Method": "GetByTorneo",
+    "RelativePath": "api/Equipo/torneo/{torneoId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "torneoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TorneoFutbol.API.Controllers.TorneoController",
     "Method": "GetAll",
     "RelativePath": "api/Torneo",
