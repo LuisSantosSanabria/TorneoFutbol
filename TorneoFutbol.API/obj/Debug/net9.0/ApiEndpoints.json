@@ -117,6 +117,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TorneoFutbol.API.Controllers.EstadisticaController",
+    "Method": "GetTablaGoleadores",
+    "RelativePath": "api/Estadistica/torneo/{torneoId}/goleadores",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "torneoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TorneoFutbol.API.Controllers.EstadisticaController",
+    "Method": "GetTablaPosiciones",
+    "RelativePath": "api/Estadistica/torneo/{torneoId}/posiciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "torneoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TorneoFutbol.API.Controllers.FixtureController",
     "Method": "GenerarAutomatico",
     "RelativePath": "api/Fixture/generar",

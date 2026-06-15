@@ -205,6 +205,52 @@
         }
       }
     },
+    "/api/Estadistica/torneo/{torneoId}/posiciones": {
+      "get": {
+        "tags": [
+          "Estadistica"
+        ],
+        "parameters": [
+          {
+            "name": "torneoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Estadistica/torneo/{torneoId}/goleadores": {
+      "get": {
+        "tags": [
+          "Estadistica"
+        ],
+        "parameters": [
+          {
+            "name": "torneoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Fixture/torneo/{torneoId}": {
       "get": {
         "tags": [
