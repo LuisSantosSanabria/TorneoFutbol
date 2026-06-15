@@ -117,6 +117,112 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TorneoFutbol.API.Controllers.JugadorController",
+    "Method": "Alta",
+    "RelativePath": "api/Jugador",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "TorneoFutbol.Core.DTOs.Jugadores.AltaJugadorRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TorneoFutbol.API.Controllers.JugadorController",
+    "Method": "GetById",
+    "RelativePath": "api/Jugador/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TorneoFutbol.API.Controllers.JugadorController",
+    "Method": "Editar",
+    "RelativePath": "api/Jugador/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "TorneoFutbol.Core.DTOs.Jugadores.EditarJugadorRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TorneoFutbol.API.Controllers.JugadorController",
+    "Method": "Baja",
+    "RelativePath": "api/Jugador/{id}/baja",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TorneoFutbol.API.Controllers.JugadorController",
+    "Method": "Transferir",
+    "RelativePath": "api/Jugador/{id}/transferir",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "TorneoFutbol.Core.DTOs.Jugadores.TransferirJugadorRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TorneoFutbol.API.Controllers.JugadorController",
+    "Method": "GetByEquipo",
+    "RelativePath": "api/Jugador/equipo/{equipoId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "equipoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TorneoFutbol.API.Controllers.TorneoController",
     "Method": "GetAll",
     "RelativePath": "api/Torneo",

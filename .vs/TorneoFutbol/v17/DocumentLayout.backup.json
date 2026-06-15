@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\canelo\\Desktop\\TorneoFutbol\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AB440256-0320-4FB2-9A20-26FC0CB6D67C}|TorneoFutbol.API\\TorneoFutbol.API.csproj|c:\\users\\canelo\\desktop\\torneofutbol\\torneofutbol.api\\controllers\\equipocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB440256-0320-4FB2-9A20-26FC0CB6D67C}|TorneoFutbol.API\\TorneoFutbol.API.csproj|solutionrelative:torneofutbol.api\\controllers\\equipocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB440256-0320-4FB2-9A20-26FC0CB6D67C}|TorneoFutbol.API\\TorneoFutbol.API.csproj|c:\\users\\canelo\\desktop\\torneofutbol\\torneofutbol.api\\controllers\\jugadorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB440256-0320-4FB2-9A20-26FC0CB6D67C}|TorneoFutbol.API\\TorneoFutbol.API.csproj|solutionrelative:torneofutbol.api\\controllers\\jugadorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB440256-0320-4FB2-9A20-26FC0CB6D67C}|TorneoFutbol.API\\TorneoFutbol.API.csproj|c:\\users\\canelo\\desktop\\torneofutbol\\torneofutbol.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB440256-0320-4FB2-9A20-26FC0CB6D67C}|TorneoFutbol.API\\TorneoFutbol.API.csproj|solutionrelative:torneofutbol.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BB05760B-D68F-4544-90F4-FB54D4659A85}|TorneoFutbol.Infrastructure\\TorneoFutbol.Infrastructure.csproj|c:\\users\\canelo\\desktop\\torneofutbol\\torneofutbol.infrastructure\\services\\equiposervice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB05760B-D68F-4544-90F4-FB54D4659A85}|TorneoFutbol.Infrastructure\\TorneoFutbol.Infrastructure.csproj|solutionrelative:torneofutbol.infrastructure\\services\\equiposervice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0DAFA78E-B830-4D9F-AF45-772029E53BD3}|TorneoFutbol.Core\\TorneoFutbol.Core.csproj|c:\\users\\canelo\\desktop\\torneofutbol\\torneofutbol.core\\interfaces\\iequiposervice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0DAFA78E-B830-4D9F-AF45-772029E53BD3}|TorneoFutbol.Core\\TorneoFutbol.Core.csproj|solutionrelative:torneofutbol.core\\interfaces\\iequiposervice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,14 +35,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EquipoController.cs",
-              "DocumentMoniker": "C:\\Users\\canelo\\Desktop\\TorneoFutbol\\TorneoFutbol.API\\Controllers\\EquipoController.cs",
-              "RelativeDocumentMoniker": "TorneoFutbol.API\\Controllers\\EquipoController.cs",
-              "ToolTip": "C:\\Users\\canelo\\Desktop\\TorneoFutbol\\TorneoFutbol.API\\Controllers\\EquipoController.cs",
-              "RelativeToolTip": "TorneoFutbol.API\\Controllers\\EquipoController.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAmwGMAAAABAAAAAAAAAA==",
+              "Title": "JugadorController.cs",
+              "DocumentMoniker": "C:\\Users\\canelo\\Desktop\\TorneoFutbol\\TorneoFutbol.API\\Controllers\\JugadorController.cs",
+              "RelativeDocumentMoniker": "TorneoFutbol.API\\Controllers\\JugadorController.cs",
+              "ToolTip": "C:\\Users\\canelo\\Desktop\\TorneoFutbol\\TorneoFutbol.API\\Controllers\\JugadorController.cs",
+              "RelativeToolTip": "TorneoFutbol.API\\Controllers\\JugadorController.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAuwHEAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T15:22:14.993Z",
+              "WhenOpened": "2026-06-15T21:01:31.207Z",
               "EditorCaption": ""
             },
             {
@@ -61,35 +53,9 @@
               "RelativeDocumentMoniker": "TorneoFutbol.API\\Program.cs",
               "ToolTip": "C:\\Users\\canelo\\Desktop\\TorneoFutbol\\TorneoFutbol.API\\Program.cs",
               "RelativeToolTip": "TorneoFutbol.API\\Program.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADgAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADsAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T15:20:18.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IEquipoService.cs",
-              "DocumentMoniker": "C:\\Users\\canelo\\Desktop\\TorneoFutbol\\TorneoFutbol.Core\\Interfaces\\IEquipoService.cs",
-              "RelativeDocumentMoniker": "TorneoFutbol.Core\\Interfaces\\IEquipoService.cs",
-              "ToolTip": "C:\\Users\\canelo\\Desktop\\TorneoFutbol\\TorneoFutbol.Core\\Interfaces\\IEquipoService.cs",
-              "RelativeToolTip": "TorneoFutbol.Core\\Interfaces\\IEquipoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T14:55:28.273Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EquipoService.cs",
-              "DocumentMoniker": "C:\\Users\\canelo\\Desktop\\TorneoFutbol\\TorneoFutbol.Infrastructure\\Services\\EquipoService.cs",
-              "RelativeDocumentMoniker": "TorneoFutbol.Infrastructure\\Services\\EquipoService.cs",
-              "ToolTip": "C:\\Users\\canelo\\Desktop\\TorneoFutbol\\TorneoFutbol.Infrastructure\\Services\\EquipoService.cs",
-              "RelativeToolTip": "TorneoFutbol.Infrastructure\\Services\\EquipoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T14:54:57.929Z",
+              "WhenOpened": "2026-06-15T16:03:33.252Z",
               "EditorCaption": ""
             }
           ]
