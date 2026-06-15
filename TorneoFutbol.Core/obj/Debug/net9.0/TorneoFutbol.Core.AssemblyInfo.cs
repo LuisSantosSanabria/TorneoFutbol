@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TorneoFutbol.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb8323c0783e7f5567a25834ecb03c66004aaa5d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4d54ac0adc07cbb98d6926dd793ef5d3e69cbc4")]
 [assembly: System.Reflection.AssemblyProductAttribute("TorneoFutbol.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TorneoFutbol.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

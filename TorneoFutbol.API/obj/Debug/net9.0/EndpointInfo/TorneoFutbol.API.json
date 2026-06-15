@@ -205,6 +205,291 @@
         }
       }
     },
+    "/api/Fixture/torneo/{torneoId}": {
+      "get": {
+        "tags": [
+          "Fixture"
+        ],
+        "parameters": [
+          {
+            "name": "torneoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Fixture/torneo/{torneoId}/fecha/{fechaNumero}": {
+      "get": {
+        "tags": [
+          "Fixture"
+        ],
+        "parameters": [
+          {
+            "name": "torneoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "fechaNumero",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Fixture/partido/{id}": {
+      "get": {
+        "tags": [
+          "Fixture"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Fixture"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EditarPartidoRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EditarPartidoRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EditarPartidoRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Fixture"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Fixture/generar": {
+      "post": {
+        "tags": [
+          "Fixture"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GenerarFixtureRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GenerarFixtureRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GenerarFixtureRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Fixture/partido": {
+      "post": {
+        "tags": [
+          "Fixture"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearPartidoRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearPartidoRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearPartidoRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Fixture/partido/{id}/resultado": {
+      "patch": {
+        "tags": [
+          "Fixture"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CargarResultadoRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CargarResultadoRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CargarResultadoRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Fixture/partido/{id}/estado": {
+      "patch": {
+        "tags": [
+          "Fixture"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Jugador/equipo/{equipoId}": {
       "get": {
         "tags": [
@@ -579,6 +864,20 @@
         },
         "additionalProperties": false
       },
+      "CargarResultadoRequest": {
+        "type": "object",
+        "properties": {
+          "golesLocal": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "golesVisitante": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "CrearEquipoRequest": {
         "type": "object",
         "properties": {
@@ -591,6 +890,36 @@
             "nullable": true
           },
           "torneoId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CrearPartidoRequest": {
+        "type": "object",
+        "properties": {
+          "torneoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fechaNumero": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fechaHora": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "cancha": {
+            "type": "string",
+            "nullable": true
+          },
+          "equipoLocalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "equipoVisitanteId": {
             "type": "integer",
             "format": "int32"
           }
@@ -651,6 +980,32 @@
         },
         "additionalProperties": false
       },
+      "EditarPartidoRequest": {
+        "type": "object",
+        "properties": {
+          "fechaNumero": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fechaHora": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "cancha": {
+            "type": "string",
+            "nullable": true
+          },
+          "equipoLocalId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "equipoVisitanteId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
       "EditarTorneoRequest": {
         "type": "object",
         "properties": {
@@ -669,6 +1024,28 @@
           "fechaFin": {
             "type": "string",
             "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GenerarFixtureRequest": {
+        "type": "object",
+        "properties": {
+          "torneoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fechaInicioPrimerFecha": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "diasEntrePartidos": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cancha": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

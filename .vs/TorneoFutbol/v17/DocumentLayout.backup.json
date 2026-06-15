@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\canelo\\Desktop\\TorneoFutbol\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AB440256-0320-4FB2-9A20-26FC0CB6D67C}|TorneoFutbol.API\\TorneoFutbol.API.csproj|c:\\users\\canelo\\desktop\\torneofutbol\\torneofutbol.api\\controllers\\jugadorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB440256-0320-4FB2-9A20-26FC0CB6D67C}|TorneoFutbol.API\\TorneoFutbol.API.csproj|solutionrelative:torneofutbol.api\\controllers\\jugadorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB440256-0320-4FB2-9A20-26FC0CB6D67C}|TorneoFutbol.API\\TorneoFutbol.API.csproj|c:\\users\\canelo\\desktop\\torneofutbol\\torneofutbol.api\\controllers\\fixturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB440256-0320-4FB2-9A20-26FC0CB6D67C}|TorneoFutbol.API\\TorneoFutbol.API.csproj|solutionrelative:torneofutbol.api\\controllers\\fixturecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AB440256-0320-4FB2-9A20-26FC0CB6D67C}|TorneoFutbol.API\\TorneoFutbol.API.csproj|c:\\users\\canelo\\desktop\\torneofutbol\\torneofutbol.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB440256-0320-4FB2-9A20-26FC0CB6D67C}|TorneoFutbol.API\\TorneoFutbol.API.csproj|solutionrelative:torneofutbol.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB05760B-D68F-4544-90F4-FB54D4659A85}|TorneoFutbol.Infrastructure\\TorneoFutbol.Infrastructure.csproj|c:\\users\\canelo\\desktop\\torneofutbol\\torneofutbol.infrastructure\\services\\fixtureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB05760B-D68F-4544-90F4-FB54D4659A85}|TorneoFutbol.Infrastructure\\TorneoFutbol.Infrastructure.csproj|solutionrelative:torneofutbol.infrastructure\\services\\fixtureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,14 +39,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "JugadorController.cs",
-              "DocumentMoniker": "C:\\Users\\canelo\\Desktop\\TorneoFutbol\\TorneoFutbol.API\\Controllers\\JugadorController.cs",
-              "RelativeDocumentMoniker": "TorneoFutbol.API\\Controllers\\JugadorController.cs",
-              "ToolTip": "C:\\Users\\canelo\\Desktop\\TorneoFutbol\\TorneoFutbol.API\\Controllers\\JugadorController.cs",
-              "RelativeToolTip": "TorneoFutbol.API\\Controllers\\JugadorController.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAuwHEAAAA8AAAAAAAAAA==",
+              "Title": "FixtureController.cs",
+              "DocumentMoniker": "C:\\Users\\canelo\\Desktop\\TorneoFutbol\\TorneoFutbol.API\\Controllers\\FixtureController.cs",
+              "RelativeDocumentMoniker": "TorneoFutbol.API\\Controllers\\FixtureController.cs",
+              "ToolTip": "C:\\Users\\canelo\\Desktop\\TorneoFutbol\\TorneoFutbol.API\\Controllers\\FixtureController.cs",
+              "RelativeToolTip": "TorneoFutbol.API\\Controllers\\FixtureController.cs",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAkwJ8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T21:01:31.207Z",
+              "WhenOpened": "2026-06-15T21:30:16.361Z",
               "EditorCaption": ""
             },
             {
@@ -53,9 +57,22 @@
               "RelativeDocumentMoniker": "TorneoFutbol.API\\Program.cs",
               "ToolTip": "C:\\Users\\canelo\\Desktop\\TorneoFutbol\\TorneoFutbol.API\\Program.cs",
               "RelativeToolTip": "TorneoFutbol.API\\Program.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADsAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAD4AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T16:03:33.252Z",
+              "WhenOpened": "2026-06-15T21:29:26.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FixtureService.cs",
+              "DocumentMoniker": "C:\\Users\\canelo\\Desktop\\TorneoFutbol\\TorneoFutbol.Infrastructure\\Services\\FixtureService.cs",
+              "RelativeDocumentMoniker": "TorneoFutbol.Infrastructure\\Services\\FixtureService.cs",
+              "ToolTip": "C:\\Users\\canelo\\Desktop\\TorneoFutbol\\TorneoFutbol.Infrastructure\\Services\\FixtureService.cs",
+              "RelativeToolTip": "TorneoFutbol.Infrastructure\\Services\\FixtureService.cs",
+              "ViewState": "AgIAADoBAAAAAAAAAADwv0UBAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T21:26:45.18Z",
               "EditorCaption": ""
             }
           ]

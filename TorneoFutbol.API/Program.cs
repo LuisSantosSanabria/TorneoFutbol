@@ -59,6 +59,9 @@ builder.Services.AddScoped<IEquipoService, EquipoService>();
 // servivio de JugadoreService
 builder.Services.AddScoped<IJugadorService, JugadorService>();
 
+// servicio de Fixture
+builder.Services.AddScoped<IFixtureService, FixtureService>();
+
 // JWT
 var jwtKey = builder.Configuration["Jwt:Key"]!;
 builder.Services.AddAuthentication(options =>
