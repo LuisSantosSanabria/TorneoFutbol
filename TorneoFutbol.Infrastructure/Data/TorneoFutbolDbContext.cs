@@ -20,6 +20,7 @@ namespace TorneoFutbol.Infrastructure.Data
         public DbSet<Jugador> Jugadores { get; set; }
         public DbSet<Partido> Partidos { get; set; }
         public DbSet<Gol> Goles { get; set; }
+        public DbSet<Tarjeta> Tarjetas { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -52,7 +53,7 @@ namespace TorneoFutbol.Infrastructure.Data
                  .OnDelete(DeleteBehavior.Restrict);
             });
 
-            // ── Equipo ──────────────────────────────────────────
+            // Equipo
             modelBuilder.Entity<Equipo>(e =>
             {
                 e.HasKey(eq => eq.Id);
@@ -67,7 +68,7 @@ namespace TorneoFutbol.Infrastructure.Data
                  .OnDelete(DeleteBehavior.Cascade);
             });
 
-            // ── Jugador ─────────────────────────────────────────
+            // Jugador
             modelBuilder.Entity<Jugador>(e =>
             {
                 e.HasKey(j => j.Id);
@@ -83,7 +84,7 @@ namespace TorneoFutbol.Infrastructure.Data
                  .OnDelete(DeleteBehavior.Cascade);
             });
 
-            // ── Partido ─────────────────────────────────────────
+            // Partido
             modelBuilder.Entity<Partido>(e =>
             {
                 e.HasKey(p => p.Id);
@@ -110,7 +111,7 @@ namespace TorneoFutbol.Infrastructure.Data
                  .OnDelete(DeleteBehavior.NoAction);
             });
 
-            // ── Gol ─────────────────────────────────────────────
+            // Gol
             modelBuilder.Entity<Gol>(e =>
             {
                 e.HasKey(g => g.Id);
@@ -133,6 +134,29 @@ namespace TorneoFutbol.Infrastructure.Data
                 e.HasOne(g => g.Equipo)
                  .WithMany()
                  .HasForeignKey(g => g.EquipoId)
+                 .OnDelete(DeleteBehavior.NoAction);
+            });
+
+            // Tarjeta
+            modelBuilder.Entity<Tarjeta>(e =>
+            {
+                e.HasKey(t => t.Id);
+                e.Property(t => t.Tipo).IsRequired().HasMaxLength(10);
+                e.Property(t => t.Minuto).IsRequired();
+
+                e.HasOne(t => t.Partido)
+                 .WithMany(p => p.Tarjetas)
+                 .HasForeignKey(t => t.PartidoId)
+                 .OnDelete(DeleteBehavior.Cascade);
+
+                e.HasOne(t => t.Jugador)
+                 .WithMany(j => j.Tarjetas)
+                 .HasForeignKey(t => t.JugadorId)
+                 .OnDelete(DeleteBehavior.NoAction);
+
+                e.HasOne(t => t.Equipo)
+                 .WithMany()
+                 .HasForeignKey(t => t.EquipoId)
                  .OnDelete(DeleteBehavior.NoAction);
             });
         }

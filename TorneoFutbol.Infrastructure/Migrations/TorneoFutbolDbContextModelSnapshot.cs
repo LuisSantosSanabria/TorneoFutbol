@@ -178,6 +178,42 @@ namespace TorneoFutbol.Infrastructure.Migrations
                     b.ToTable("Partidos");
                 });
 
+            modelBuilder.Entity("TorneoFutbol.Core.Entities.Tarjeta", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("EquipoId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("JugadorId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Minuto")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PartidoId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Tipo")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EquipoId");
+
+                    b.HasIndex("JugadorId");
+
+                    b.HasIndex("PartidoId");
+
+                    b.ToTable("Tarjetas");
+                });
+
             modelBuilder.Entity("TorneoFutbol.Core.Entities.Torneo", b =>
                 {
                     b.Property<int>("Id")
@@ -332,6 +368,33 @@ namespace TorneoFutbol.Infrastructure.Migrations
                     b.Navigation("Torneo");
                 });
 
+            modelBuilder.Entity("TorneoFutbol.Core.Entities.Tarjeta", b =>
+                {
+                    b.HasOne("TorneoFutbol.Core.Entities.Equipo", "Equipo")
+                        .WithMany()
+                        .HasForeignKey("EquipoId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("TorneoFutbol.Core.Entities.Jugador", "Jugador")
+                        .WithMany("Tarjetas")
+                        .HasForeignKey("JugadorId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("TorneoFutbol.Core.Entities.Partido", "Partido")
+                        .WithMany("Tarjetas")
+                        .HasForeignKey("PartidoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Equipo");
+
+                    b.Navigation("Jugador");
+
+                    b.Navigation("Partido");
+                });
+
             modelBuilder.Entity("TorneoFutbol.Core.Entities.Torneo", b =>
                 {
                     b.HasOne("TorneoFutbol.Core.Entities.Usuario", "Organizador")
@@ -351,11 +414,15 @@ namespace TorneoFutbol.Infrastructure.Migrations
             modelBuilder.Entity("TorneoFutbol.Core.Entities.Jugador", b =>
                 {
                     b.Navigation("Goles");
+
+                    b.Navigation("Tarjetas");
                 });
 
             modelBuilder.Entity("TorneoFutbol.Core.Entities.Partido", b =>
                 {
                     b.Navigation("Goles");
+
+                    b.Navigation("Tarjetas");
                 });
 
             modelBuilder.Entity("TorneoFutbol.Core.Entities.Torneo", b =>

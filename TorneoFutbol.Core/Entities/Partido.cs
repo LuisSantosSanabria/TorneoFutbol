@@ -24,5 +24,6 @@ namespace TorneoFutbol.Core.Entities
         public Equipo EquipoLocal { get; set; } = null!;
         public Equipo EquipoVisitante { get; set; } = null!;
         public ICollection<Gol> Goles { get; set; } = new List<Gol>();
+        public ICollection<Tarjeta> Tarjetas { get; set; } = new List<Tarjeta>();
     }
 }

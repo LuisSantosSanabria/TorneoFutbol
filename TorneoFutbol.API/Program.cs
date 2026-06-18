@@ -65,6 +65,12 @@ builder.Services.AddScoped<IFixtureService, FixtureService>();
 // servicio de estadistica
 builder.Services.AddScoped<IEstadisticaService, EstadisticaService>();
 
+// servicio de goles
+builder.Services.AddScoped<IGolService, GolService>();
+
+// Servicio de tarjetas
+builder.Services.AddScoped<ITarjetaService, TarjetaService>();
+
 // JWT
 var jwtKey = builder.Configuration["Jwt:Key"]!;
 builder.Services.AddAuthentication(options =>

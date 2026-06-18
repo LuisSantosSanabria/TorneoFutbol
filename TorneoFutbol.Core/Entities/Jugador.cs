@@ -19,5 +19,6 @@ namespace TorneoFutbol.Core.Entities
         // Navegación
         public Equipo Equipo { get; set; } = null!;
         public ICollection<Gol> Goles { get; set; } = new List<Gol>();
+        public ICollection<Tarjeta> Tarjetas { get; set; } = new List<Tarjeta>();
     }
 }

@@ -313,6 +313,59 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TorneoFutbol.API.Controllers.GolController",
+    "Method": "Anular",
+    "RelativePath": "api/Gol/{golId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "golId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TorneoFutbol.API.Controllers.GolController",
+    "Method": "GetByPartido",
+    "RelativePath": "api/Gol/partido/{partidoId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "partidoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TorneoFutbol.API.Controllers.GolController",
+    "Method": "Registrar",
+    "RelativePath": "api/Gol/partido/{partidoId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "partidoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "TorneoFutbol.Core.DTOs.Goles.RegistrarGolRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TorneoFutbol.API.Controllers.JugadorController",
     "Method": "Alta",
     "RelativePath": "api/Jugador",

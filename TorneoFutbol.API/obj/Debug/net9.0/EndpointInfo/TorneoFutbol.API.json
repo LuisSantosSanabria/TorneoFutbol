@@ -536,6 +536,92 @@
         }
       }
     },
+    "/api/Gol/partido/{partidoId}": {
+      "get": {
+        "tags": [
+          "Gol"
+        ],
+        "parameters": [
+          {
+            "name": "partidoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Gol"
+        ],
+        "parameters": [
+          {
+            "name": "partidoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistrarGolRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistrarGolRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegistrarGolRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Gol/{golId}": {
+      "delete": {
+        "tags": [
+          "Gol"
+        ],
+        "parameters": [
+          {
+            "name": "golId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Jugador/equipo/{equipoId}": {
       "get": {
         "tags": [
@@ -1124,6 +1210,27 @@
           "password": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RegistrarGolRequest": {
+        "type": "object",
+        "properties": {
+          "jugadorId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "equipoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "minuto": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "esAutogol": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false

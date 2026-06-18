@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TorneoFutbol.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf1b7b575265071bf916587297fba19711060aac")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e8866480808195db993544b1e208e19cfb40f0d1")]
 [assembly: System.Reflection.AssemblyProductAttribute("TorneoFutbol.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TorneoFutbol.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
