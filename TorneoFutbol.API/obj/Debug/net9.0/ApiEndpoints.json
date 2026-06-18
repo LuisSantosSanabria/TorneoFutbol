@@ -118,6 +118,22 @@
   },
   {
     "ContainingType": "TorneoFutbol.API.Controllers.EstadisticaController",
+    "Method": "GetDashboard",
+    "RelativePath": "api/Estadistica/torneo/{torneoId}/dashboard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "torneoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TorneoFutbol.API.Controllers.EstadisticaController",
     "Method": "GetTablaGoleadores",
     "RelativePath": "api/Estadistica/torneo/{torneoId}/goleadores",
     "HttpMethod": "GET",
@@ -136,6 +152,22 @@
     "ContainingType": "TorneoFutbol.API.Controllers.EstadisticaController",
     "Method": "GetTablaPosiciones",
     "RelativePath": "api/Estadistica/torneo/{torneoId}/posiciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "torneoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TorneoFutbol.API.Controllers.EstadisticaController",
+    "Method": "GetVallasMenosVencidas",
+    "RelativePath": "api/Estadistica/torneo/{torneoId}/vallas",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -466,6 +498,144 @@
       {
         "Name": "equipoId",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TorneoFutbol.API.Controllers.NoticiaController",
+    "Method": "Crear",
+    "RelativePath": "api/Noticia",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "TorneoFutbol.Core.DTOs.Noticias.CrearNoticiaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TorneoFutbol.API.Controllers.NoticiaController",
+    "Method": "GetById",
+    "RelativePath": "api/Noticia/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TorneoFutbol.API.Controllers.NoticiaController",
+    "Method": "Editar",
+    "RelativePath": "api/Noticia/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "TorneoFutbol.Core.DTOs.Noticias.EditarNoticiaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TorneoFutbol.API.Controllers.NoticiaController",
+    "Method": "Eliminar",
+    "RelativePath": "api/Noticia/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TorneoFutbol.API.Controllers.NoticiaController",
+    "Method": "GetByTorneo",
+    "RelativePath": "api/Noticia/torneo/{torneoId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "torneoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TorneoFutbol.API.Controllers.TarjetaController",
+    "Method": "Anular",
+    "RelativePath": "api/Tarjeta/{tarjetaId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tarjetaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TorneoFutbol.API.Controllers.TarjetaController",
+    "Method": "GetByPartido",
+    "RelativePath": "api/Tarjeta/partido/{partidoId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "partidoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TorneoFutbol.API.Controllers.TarjetaController",
+    "Method": "Registrar",
+    "RelativePath": "api/Tarjeta/partido/{partidoId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "partidoId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "TorneoFutbol.Core.DTOs.Tarjetas.RegistrarTarjetaRequest",
         "IsRequired": true
       }
     ],

@@ -43,4 +43,34 @@ public class EstadisticaController : ControllerBase
             return BadRequest(new { mensaje = ex.Message });
         }
     }
+
+    // GET api/estadistica/torneo/1/dashboard
+    [HttpGet("torneo/{torneoId}/dashboard")]
+    public async Task<IActionResult> GetDashboard(int torneoId)
+    {
+        try
+        {
+            var dashboard = await _estadisticaService.GetDashboardAsync(torneoId);
+            return Ok(dashboard);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new { mensaje = ex.Message });
+        }
+    }
+
+    // GET api/estadistica/torneo/1/vallas
+    [HttpGet("torneo/{torneoId}/vallas")]
+    public async Task<IActionResult> GetVallasMenosVencidas(int torneoId)
+    {
+        try
+        {
+            var dashboard = await _estadisticaService.GetDashboardAsync(torneoId);
+            return Ok(dashboard.VallasMenosVencidas);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new { mensaje = ex.Message });
+        }
+    }
 }

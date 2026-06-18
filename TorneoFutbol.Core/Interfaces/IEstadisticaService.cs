@@ -11,5 +11,6 @@ namespace TorneoFutbol.Core.Interfaces
     {
         Task<IEnumerable<PosicionResponse>> GetTablaPosicionesAsync(int torneoId);
         Task<IEnumerable<GoleadorResponse>> GetTablaGoleadoresAsync(int torneoId);
+        Task<DashboardResponse> GetDashboardAsync(int torneoId);
     }
 }

@@ -71,6 +71,9 @@ builder.Services.AddScoped<IGolService, GolService>();
 // Servicio de tarjetas
 builder.Services.AddScoped<ITarjetaService, TarjetaService>();
 
+// Servicio de Noticias
+builder.Services.AddScoped<INoticiaService, NoticiaService>();
+
 // JWT
 var jwtKey = builder.Configuration["Jwt:Key"]!;
 builder.Services.AddAuthentication(options =>

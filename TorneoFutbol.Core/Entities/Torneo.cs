@@ -20,5 +20,6 @@ namespace TorneoFutbol.Core.Entities
         public Usuario Organizador { get; set; } = null!;
         public ICollection<Equipo> Equipos { get; set; } = new List<Equipo>();
         public ICollection<Partido> Partidos { get; set; } = new List<Partido>();
+        public ICollection<Noticia> Noticias { get; set; } = new List<Noticia>();
     }
 }

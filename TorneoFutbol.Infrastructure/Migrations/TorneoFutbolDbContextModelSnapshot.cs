@@ -127,6 +127,37 @@ namespace TorneoFutbol.Infrastructure.Migrations
                     b.ToTable("Jugadores");
                 });
 
+            modelBuilder.Entity("TorneoFutbol.Core.Entities.Noticia", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Contenido")
+                        .IsRequired()
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
+
+                    b.Property<DateTime>("FechaPublicacion")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Titulo")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<int>("TorneoId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TorneoId");
+
+                    b.ToTable("Noticias");
+                });
+
             modelBuilder.Entity("TorneoFutbol.Core.Entities.Partido", b =>
                 {
                     b.Property<int>("Id")
@@ -341,6 +372,17 @@ namespace TorneoFutbol.Infrastructure.Migrations
                     b.Navigation("Equipo");
                 });
 
+            modelBuilder.Entity("TorneoFutbol.Core.Entities.Noticia", b =>
+                {
+                    b.HasOne("TorneoFutbol.Core.Entities.Torneo", "Torneo")
+                        .WithMany("Noticias")
+                        .HasForeignKey("TorneoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Torneo");
+                });
+
             modelBuilder.Entity("TorneoFutbol.Core.Entities.Partido", b =>
                 {
                     b.HasOne("TorneoFutbol.Core.Entities.Equipo", "EquipoLocal")
@@ -428,6 +470,8 @@ namespace TorneoFutbol.Infrastructure.Migrations
             modelBuilder.Entity("TorneoFutbol.Core.Entities.Torneo", b =>
                 {
                     b.Navigation("Equipos");
+
+                    b.Navigation("Noticias");
 
                     b.Navigation("Partidos");
                 });

@@ -21,6 +21,7 @@ namespace TorneoFutbol.Infrastructure.Data
         public DbSet<Partido> Partidos { get; set; }
         public DbSet<Gol> Goles { get; set; }
         public DbSet<Tarjeta> Tarjetas { get; set; } = null!;
+        public DbSet<Noticia> Noticias { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -158,6 +159,20 @@ namespace TorneoFutbol.Infrastructure.Data
                  .WithMany()
                  .HasForeignKey(t => t.EquipoId)
                  .OnDelete(DeleteBehavior.NoAction);
+            });
+
+            // Noticia
+            modelBuilder.Entity<Noticia>(e =>
+            {
+                e.HasKey(n => n.Id);
+                e.Property(n => n.Titulo).IsRequired().HasMaxLength(200);
+                e.Property(n => n.Contenido).IsRequired().HasMaxLength(2000);
+                e.Property(n => n.FechaPublicacion).IsRequired();
+
+                e.HasOne(n => n.Torneo)
+                 .WithMany(t => t.Noticias)
+                 .HasForeignKey(n => n.TorneoId)
+                 .OnDelete(DeleteBehavior.Cascade);
             });
         }
     }
